@@ -86,19 +86,34 @@
             <div class="col-lg-6">
                 <nav class="header__menu">
                     <ul>
-                        <li class="active"><a href="/">Home</a></li>
-                        <li><a href="/shopgrid">Shop</a></li>
-                        <li>
+                        <li id="home" class="inactive"><a href="/">Home</a></li>
+                        <li id="shop" class="inactive"><a href="/shopgrid">Shop</a></li>
+                        <li id="pages" class="inactive">
                             <a href="#">Pages</a>
                             <ul class="header__menu__dropdown">
                                 <li><a href="/shopingcart">Shoping Cart</a></li>
                                 <li><a href="/checkout">Check Out</a></li>
                             </ul>
                         </li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li id="contact" class="inactive"><a href="/contact">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
+                {{--Change class value of header menu to "active" when page is loaded--}}
+                @switch($StrPath) {{--Get Request path to determine which page is loaded then change value of 'class' attribute to "active". Visit routes/web.api to see more--}}
+                    @case('shopgrid')
+                        <script>document.getElementById('shop').setAttribute('class', 'active');</script>
+                        @break
+                    @case('shopingcart')
+                    @case('checkout')
+                        <script>document.getElementById('pages').setAttribute('class', 'active')</script>    
+                        @break
+                    @case('contact')
+                        <script>document.getElementById('contact').setAttribute('class', 'active')</script>    
+                        @break
+                    @default
+                        <script>document.getElementById('home').setAttribute('class', 'active');</script>
+                @endswitch
+                {{--END Change class value of header menu to "active" when page is loaded--}}
             <div class="col-lg-3">
                 <div class="header__cart">
                     <ul>

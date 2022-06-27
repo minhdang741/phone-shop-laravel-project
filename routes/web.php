@@ -20,12 +20,20 @@ Route::get('/', function () {
 
 // Load trang home khi truy cập url 'localhost'
 Route::get('/', function() {
-    return view('index');
+    // Get request's path
+    if($getPath = Request()->path())
+    {
+        return view('index', ['StrPath' => $getPath]);
+    }
 });
 
 // Load trang shop-grid 
 Route::get('/shopgrid', function() {
-    return view('shop-grid');
+    // Get request's path
+    if($getPath = Request()->path())
+    {
+        return view('shop-grid', ['StrPath' => $getPath]);
+    }
 });
 
 // Load trang shop-details 
@@ -35,12 +43,20 @@ Route::get('/shopdetails', function() {
 
 // Load trang shoping-cart
 Route::get('/shopingcart', function() {
-    return view('shoping-cart');
+    // Get request's path
+    if($getPath = Request()->path())
+    {
+        return view('shoping-cart', ['StrPath' => $getPath]);
+    }
 });
 
 // Load trang checkout
 Route::get('/checkout', function() {
-    return view('checkout');
+    // Get request's path
+    if($getPath = Request()->path())
+    {
+        return view('checkout', ['StrPath' => $getPath]);
+    }
 });
 
 // Load trang blog-details
@@ -55,15 +71,9 @@ Route::get('/blog', function() {
 
 // Load trang contact
 Route::get('/contact', function() {
-    return view('contact');
-});
-
-// Load trang login
-Route::get('/login', function() {
-    return view('login');
-});
-
-// Load trang signup
-Route::get('/signup', function() {
-    return view('signup');
+    // Get request's path
+    if($getPath = Request()->path())
+    {
+        return view('contact', ['StrPath' => $getPath]);
+    }
 });
