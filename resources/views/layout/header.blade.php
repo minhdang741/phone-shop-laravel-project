@@ -17,7 +17,7 @@
     </div>
     <div class="humberger__menu__widget">
         <div class="header__top__right__auth">
-            <a href="#"><i class="fa fa-user"></i> Login</a>
+            <a href="/login"><i class="fa fa-user"></i> Login</a>
         </div>
     </div>
     <nav class="humberger__menu__nav mobile-menu">
@@ -69,7 +69,7 @@
                             <a href="#"><i class="fa fa-instagram"></i></a>
                         </div>
                         <div class="header__top__right__auth">
-                            <a href="#"><i class="fa fa-user"></i> Login</a>
+                            <a href="/login"><i class="fa fa-user"></i> Login</a>
                         </div>
                     </div>
                 </div>

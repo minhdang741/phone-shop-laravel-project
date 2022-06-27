@@ -57,3 +57,13 @@ Route::get('/blog', function() {
 Route::get('/contact', function() {
     return view('contact');
 });
+
+// Load trang login
+Route::get('/login', function() {
+    return view('login');
+});
+
+// Load trang signup
+Route::get('/signup', function() {
+    return view('signup');
+});
