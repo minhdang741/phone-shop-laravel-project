@@ -35,7 +35,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
+                <div class="hero__item set-background" style="background-image: url(img/hero/banner2.jpg);">
                     <div class="hero__text">
                         <span>NEW PRODUCT</span>
                         <h2>Samsung Galaxy <br />S22 ULTRA</h2>

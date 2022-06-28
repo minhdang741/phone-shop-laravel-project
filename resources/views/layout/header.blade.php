@@ -100,34 +100,42 @@
                 </nav>
                 {{--Change class value of header menu to "active" when page is loaded--}}
                 @switch($StrPath) {{--Get Request path to determine which page is loaded then change value of 'class' attribute to "active". Visit routes/web.api to see more--}}
-                    @case('shopgrid')
-                        <script>document.getElementById('shop').setAttribute('class', 'active');</script>
-                        @break
-                    @case('shopingcart')
-                    @case('checkout')
-                        <script>document.getElementById('pages').setAttribute('class', 'active')</script>    
-                        @break
-                    @case('contact')
-                        <script>document.getElementById('contact').setAttribute('class', 'active')</script>    
-                        @break
-                    @default
-                        <script>document.getElementById('home').setAttribute('class', 'active');</script>
+                @case('shopgrid')
+                <script>
+                    document.getElementById('shop').setAttribute('class', 'active');
+                </script>
+                @break
+                @case('shopingcart')
+                @case('checkout')
+                <script>
+                    document.getElementById('pages').setAttribute('class', 'active')
+                </script>
+                @break
+                @case('contact')
+                <script>
+                    document.getElementById('contact').setAttribute('class', 'active')
+                </script>
+                @break
+                @default
+                <script>
+                    document.getElementById('home').setAttribute('class', 'active');
+                </script>
                 @endswitch
                 {{--END Change class value of header menu to "active" when page is loaded--}}
+            </div>
             <div class="col-lg-3">
-                <div class="header__cart">
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a>
-                        </li>
-                    </ul>
-                    <div class="header__cart__price">item: <span>$150.00</span></div>
+                    <div class="header__cart">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a>
+                            </li>
+                        </ul>
+                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                    </div>
                 </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
             </div>
         </div>
-        <div class="humberger__open">
-            <i class="fa fa-bars"></i>
-        </div>
-    </div>
 </header>
 <!-- Header Section End -->
