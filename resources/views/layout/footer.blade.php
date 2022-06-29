@@ -19,13 +19,13 @@
                     <h6>Quick Links</h6>
                     <ul>
                         <li><a href="#" class="w3-hover-text-blue">About Us</a></li>
-                        <li><a href="#" class="w3-hover-text-blue">Shopping</a></li>
+                        <li><a href="/shopgrid" class="w3-hover-text-blue">Shopping</a></li>
                         <li><a href="#" class="w3-hover-text-blue">Privacy Policy</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#" class="w3-hover-text-blue">Login</a></li>
-                        <li><a href="#" class="w3-hover-text-blue">Register</a></li>
-                        <li><a href="#" class="w3-hover-text-blue">Contact</a></li>
+                        <li><a href="/login" class="w3-hover-text-blue">Login</a></li>
+                        <li><a href="/signup" class="w3-hover-text-blue">Sign Up</a></li>
+                        <li><a href="/contact" class="w3-hover-text-blue">Contact</a></li>
                     </ul>
                 </div>
             </div>

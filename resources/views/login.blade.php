@@ -33,9 +33,9 @@
             style="padding: 12px 20px; margin: 8px 0px; width: 45%; border: 1px solid #f2f2f2;">
         </div>
         <div class="container">
-            <a href="/signup"><button type="button" class="w3-text-white w3-blue" 
+            <a href="/signup"><button type="button" class="w3-text-white site-btn" 
             style="padding: 12px 20px; margin: 8px 5px; width: 22%; border: 1px solid #2196F3;">Sign Up</button></a>
-            <button type="submit" class="w3-text-white w3-green"
+            <button type="submit" class="w3-text-white site-btn w3-green"
             style="padding: 12px 20px; margin: 8px 5px; width: 22%; border: 1px solid #4CAF50">Login</button>
         </div>
     </form>
