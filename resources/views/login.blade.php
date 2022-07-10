@@ -6,7 +6,7 @@
     @include('layout/header')
     @include('layout/hero')
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-background" data-setbg="img/breadcrumb.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -33,7 +33,7 @@
             style="padding: 12px 20px; margin: 8px 0px; width: 45%; border: 1px solid #f2f2f2;">
         </div>
         <div class="container">
-            <a href="/signup"><button type="button" class="w3-text-white site-btn" 
+            <a href="/signup"><button type="button" class="w3-text-white site-btn"
             style="padding: 12px 20px; margin: 8px 5px; width: 22%; border: 1px solid #2196F3;">Sign Up</button></a>
             <button type="submit" class="w3-text-white site-btn w3-green"
             style="padding: 12px 20px; margin: 8px 5px; width: 22%; border: 1px solid #4CAF50">Login</button>
