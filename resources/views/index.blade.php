@@ -6,6 +6,7 @@
     @include('layout/header')
     @include('layout/hero_index')
     @include('box/related_product')
+	123
     <!-- Featured Section Begin -->
     <section class="featured spad">
         <div class="container">
