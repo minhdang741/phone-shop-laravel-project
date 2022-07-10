@@ -6,7 +6,7 @@
     @include('layout/header')
     @include('layout/hero')
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-background" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -50,7 +50,7 @@
                             <div class="checkout__input">
                                 <p>Account Password<span>*</span></p>
                                 <input type="text">
-                            </div>
+                            </div>  
                             <div class="checkout__input">
                                 <p>Order notes</p>
                                 <input type="text"

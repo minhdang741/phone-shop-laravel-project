@@ -6,6 +6,7 @@
     @include('layout/header')
     @include('layout/hero_index')
     @include('box/related_product')
+
     <!-- Featured Section Begin -->
     <section class="featured spad">
         <div class="container">
@@ -26,22 +27,9 @@
                 </div>
             </div>
             <div class="row featured__filter">
-                @for ($i = 0; $i < count($StrTest); $i++)
-                    <div class="col-lg-3 col-md-4 col-sm-6 mix samsung apple">
-                        <div class="featured__item">
-                            <div class="featured__item__pic set-background"
-                                data-setbg="img/featured/feature-{{ $i }}.jpg">
-                            </div>
-                            <div class="featured__item__text">
-                                <h6><a href="#">{{ $StrTest[$i]->NAME }}</a></h6>
-                                <h5>$30.00</h5>
-                            </div>
-                        </div>
-                    </div>
-                @endfor
-                {{-- <div class="col-lg-3 col-md-4 col-sm-6 mix samsung apple">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix samsung apple">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-background" data-setbg="img/featured/feature-1.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li>
                                     <a href="#"><i class="fa fa-heart"></i></a>
@@ -59,10 +47,10 @@
                             <h5>$30.00</h5>
                         </div>
                     </div>
-                </div> --}}
-                {{-- <div class="col-lg-3 col-md-4 col-sm-6 mix vsmart xiaomi">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vsmart xiaomi">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-background" data-setbg="img/featured/feature-2.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li>
                                     <a href="#"><i class="fa fa-heart"></i></a>
@@ -80,10 +68,10 @@
                             <h5>$30.00</h5>
                         </div>
                     </div>
-                </div> --}}
-                {{-- <div class="col-lg-3 col-md-4 col-sm-6 mix vsmart apple">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vsmart apple">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-background" data-setbg="img/featured/feature-3.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li>
                                     <a href="#"><i class="fa fa-heart"></i></a>
@@ -101,10 +89,10 @@
                             <h5>$30.00</h5>
                         </div>
                     </div>
-                </div> --}}
-                {{-- <div class="col-lg-3 col-md-4 col-sm-6 mix xiaomi samsung">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix xiaomi samsung">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-background" data-setbg="img/featured/feature-4.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li>
                                     <a href="#"><i class="fa fa-heart"></i></a>
@@ -122,10 +110,10 @@
                             <h5>$30.00</h5>
                         </div>
                     </div>
-                </div> --}}
-                {{-- <div class="col-lg-3 col-md-4 col-sm-6 mix apple vsmart">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix apple vsmart">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-background" data-setbg="img/featured/feature-5.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li>
                                     <a href="#"><i class="fa fa-heart"></i></a>
@@ -143,10 +131,10 @@
                             <h5>$30.00</h5>
                         </div>
                     </div>
-                </div> --}}
-                {{-- <div class="col-lg-3 col-md-4 col-sm-6 mix samsung xiaomi">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix samsung xiaomi">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-background" data-setbg="img/featured/feature-6.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-6.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li>
                                     <a href="#"><i class="fa fa-heart"></i></a>
@@ -164,10 +152,10 @@
                             <h5>$30.00</h5>
                         </div>
                     </div>
-                </div> --}}
-                {{-- <div class="col-lg-3 col-md-4 col-sm-6 mix apple vsmart">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix apple vsmart">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-background" data-setbg="img/featured/feature-7.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-7.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li>
                                     <a href="#"><i class="fa fa-heart"></i></a>
@@ -185,10 +173,10 @@
                             <h5>$30.00</h5>
                         </div>
                     </div>
-                </div> --}}
-                {{-- <div class="col-lg-3 col-md-4 col-sm-6 mix xiaomi vsmart">
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix xiaomi vsmart">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-background" data-setbg="img/featured/feature-8.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li>
                                     <a href="#"><i class="fa fa-heart"></i></a>
@@ -206,7 +194,7 @@
                             <h5>$30.00</h5>
                         </div>
                     </div>
-                </div> --}}
+                </div>
             </div>
         </div>
     </section>
@@ -215,7 +203,7 @@
     @include('box/banner')
 
     <!-- Latest Product Section Begin -->
-    {{-- <section class="latest-product spad">
+    <section class="latest-product spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
@@ -229,7 +217,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
     <!-- Latest Product Section End -->
 
     @include('layout/footer')
