@@ -6,7 +6,6 @@
     @include('layout/header')
     @include('layout/hero_index')
     @include('box/related_product')
-	123
     <!-- Featured Section Begin -->
     <section class="featured spad">
         <div class="container">
@@ -27,14 +26,14 @@
                 </div>
             </div>
             <div class="row featured__filter">
-                @for ($i = 0; $i < count($StrTest); $i++)
+                @for ($i = 0; $i < count($ObjProduct); $i++)
                     <div class="col-lg-3 col-md-4 col-sm-6 mix samsung apple">
                         <div class="featured__item">
                             <div class="featured__item__pic set-background"
                                 data-setbg="img/featured/feature-{{ $i }}.jpg">
                             </div>
                             <div class="featured__item__text">
-                                <h6><a href="#">{{ $StrTest[$i]->NAME }}</a></h6>
+                                <h6><a href="#">{{ $ObjProduct[$i]->NAME }}</a></h6>
                                 <h5>$30.00</h5>
                             </div>
                         </div>
